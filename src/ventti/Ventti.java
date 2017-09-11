@@ -127,13 +127,12 @@ public class Ventti {
                 int hertta14 = 14;
 		
                 
-<<<<<<< HEAD
+
                 
 
                         //for(int i=0;i<kortit.size();i++){
-=======
                 //for(int i=0;i<kortit.size();i++){
->>>>>>> a4dabd4aa821155155be6a93ea4dff7ad22e0a07
+
 			//System.out.println(kortit.get(i));
 		}
 	}
@@ -144,16 +143,16 @@ public class Ventti {
         
         //moikka
         //123
-<<<<<<< HEAD
+
         // TODO code application logic here
     
     
 
 
 
-=======
+
         // TODO code application logic he
->>>>>>> a4dabd4aa821155155be6a93ea4dff7ad22e0a07
+
 //** Generate 10 random integers in the range 0..99. */
 //public final class RandomInteger {
 
