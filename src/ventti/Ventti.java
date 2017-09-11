@@ -131,12 +131,10 @@ public class Ventti {
 			//System.out.println(kortit.get(i));
 		}
 	}
-<<<<<<< HEAD
-    }
     
 
 
-=======
+
         
         
         
@@ -145,7 +143,7 @@ public class Ventti {
         //moikka
         //123
         // TODO code application logic he
->>>>>>> a4dabd4aa821155155be6a93ea4dff7ad22e0a07
+
 //** Generate 10 random integers in the range 0..99. */
 //public final class RandomInteger {
 
