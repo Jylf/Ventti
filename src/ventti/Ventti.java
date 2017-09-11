@@ -20,11 +20,62 @@ public class Ventti {
     public static void main(String[] args) {
 		List<String> kortit = new ArrayList<String>();
 		
-		kortit.add("1");
+		
 		kortit.add("2");
 		kortit.add("3");
+		kortit.add("4");
+                kortit.add("5");
+                kortit.add("6");
+                kortit.add("7");
+                kortit.add("8");
+                kortit.add("9");
+                kortit.add("10");
+                kortit.add("11");
+                kortit.add("12");
+                kortit.add("13");
+                kortit.add("14");
+                kortit.add("2");
+		kortit.add("3");
+		kortit.add("4");
+                kortit.add("5");
+                kortit.add("6");
+                kortit.add("7");
+                kortit.add("8");
+                kortit.add("9");
+                kortit.add("10");
+                kortit.add("11");
+                kortit.add("12");
+                kortit.add("13");
+                kortit.add("14");
+                kortit.add("2");
+		kortit.add("3");
+		kortit.add("4");
+                kortit.add("5");
+                kortit.add("6");
+                kortit.add("7");
+                kortit.add("8");
+                kortit.add("9");
+                kortit.add("10");
+                kortit.add("11");
+                kortit.add("12");
+                kortit.add("13");
+                kortit.add("14");
+                kortit.add("2");
+		kortit.add("3");
+		kortit.add("4");
+                kortit.add("5");
+                kortit.add("6");
+                kortit.add("7");
+                kortit.add("8");
+                kortit.add("9");
+                kortit.add("10");
+                kortit.add("11");
+                kortit.add("12");
+                kortit.add("13");
+                kortit.add("14");
 		
-		for(int i=0;i<kortit.size();i++){
+                
+                for(int i=0;i<kortit.size();i++){
 			System.out.println(kortit.get(i));
 		}
 	}
