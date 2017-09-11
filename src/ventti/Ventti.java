@@ -20,7 +20,7 @@ public class Ventti {
         
         //tämä on testausta 
         
-        
+        //moikka
         // TODO code application logic here
     }
     
