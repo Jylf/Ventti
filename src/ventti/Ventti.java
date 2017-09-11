@@ -75,8 +75,10 @@ public class Ventti {
                 kortit.add("Hertta14");
 		
                 
-                for(int i=0;i<kortit.size();i++){
-			System.out.println(kortit.get(i));
+                
+
+                        //for(int i=0;i<kortit.size();i++){
+			//System.out.println(kortit.get(i));
 		}
 	}
         
@@ -87,7 +89,7 @@ public class Ventti {
         //moikka
         //123
         // TODO code application logic here
-    }
+    
     
 
 
