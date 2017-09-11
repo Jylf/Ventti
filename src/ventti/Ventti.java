@@ -138,16 +138,12 @@ public class Ventti {
         
         //moikka
         //123
-        // TODO code application logic here
-}
-  
-}
-
-
+        // TODO code application logic he
 //** Generate 10 random integers in the range 0..99. */
 //public final class RandomInteger {
-  
-  //public static final void main(String... aArgs){
+
+
+//public static final void main(String... aArgs){
     //log("Generating 10 random integers in range 0..99.");
     
     //note a single Random object is reused here
