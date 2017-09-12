@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ventti;
-
-import java.util.ArrayList;
-import java.util.List;
+//package ventti;
+//
+//import java.util.ArrayList;
+//import java.util.List;
 
 /**
  *
@@ -139,24 +139,6 @@ public class Ventti {
 			//System.out.println(kortit.get(i));
 		}
 	}
-    
-
-
-
-        
-        
-        
-        //tämä on testausta 
-        
-        //moikka
-        //123
-
-        // TODO code application logic here
-    
-    
-
-
-
 
         // TODO code application logic he
 
@@ -176,8 +158,7 @@ public class Ventti {
     
     //log("Done.");
  // }
-<<<<<<< HEAD
-=======
+
 
 //import java.util.Random;
 
@@ -213,4 +194,110 @@ public class Ventti {
   //  System.out.println(aMessage);
  // }
 //} 
->>>>>>> 6729e6c174388c6431612c5cfe568f23656a908b
+
+
+
+//public class DeuceTXTest
+//{
+ //@Atomic
+ //public void myTransactionMethod(HashMap<String, String> myHashMap)
+        // {
+ // myHashMap.put("s2", "two");
+ // if(8>5) 
+                 // throw new NullPointerException();
+// }
+
+  //public static void main(String[] args){
+   //HashMap<String, String> hashMap = new HashMap<String, String>();
+   //hashMap.put("s1", "one");
+   //System.out.println("Prior TX :: "+hashMap);
+   //DeuceTXTest txTest = new DeuceTXTest();
+   //try {
+    //txTest.myTransactionMethod(hashMap);
+   //} catch (Exception e) {
+    //System.out.println(e);
+   //}
+   //System.out.println("Post TX :: "+hashMap);
+  //}
+//}
+//import java.util.*;
+
+
+//class Deck {
+    // create possible card combinations
+    //public final String[] SUITS = { "H", "D", "C", "S" };
+    //public final String[] RANKS = { "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2" };
+
+    // maximum number of cards
+    //public final int deckLength = SUITS.length * RANKS.length;
+    //public List<String> fullDeck = new ArrayList<>();
+
+    //public Deck() {
+        //for(int i = 0; i < SUITS.length; i++) {
+            //for(int j = 0; j < RANKS.length; j++) {
+                //fullDeck.add(RANKS[j] + SUITS[i]);
+           // }
+       // }
+  // }
+
+    //public Deck(List<String> fullDeck) {
+        //this.fullDeck = fullDeck;
+        //for(int i = 0; i < SUITS.length; i++) {
+            //for(int j = 0; j < RANKS.length; j++) {
+                //fullDeck.add(RANKS[j] + SUITS[i]);
+           // }
+       // }
+   // }
+   // public List<String> shuffle(List<String> fullDeck) {
+   //     this.fullDeck = fullDeck;
+   //     Collections.shuffle(fullDeck);
+   //     return fullDeck;
+   // }
+
+    // this was mainly used for testing purposes
+    // to ensure shuffling was indeed taking place
+    // public void showDeck(List<String> fullDeck) {
+        //this.fullDeck = fullDeck;
+//        for(int i = 0; i < deckLength; i++) {
+//            System.out.printf("%s ",fullDeck.get(i));
+//        }
+//    }
+//}
+//
+//class Hands extends Deck {
+//
+//    public String[] hand = new String[2];
+//    Random random = new Random();
+//
+//    // select 2 cards to distribute to player
+//    public String[] getHand(List<String> fullDeck) {
+//        super.fullDeck = fullDeck;
+//        for(int i = 0; i < this.hand.length; i++) {
+//            this.hand[i] = fullDeck.get(random.nextInt(super.deckLength));
+//        }
+//        return this.hand;
+//    }
+//
+//    // show player hand
+//    public void showHand() {
+//        for(int i = 0; i < this.hand.length; i++) {
+//            System.out.printf("%s ", this.hand[i]);
+//
+//        }
+//    }
+//}
+//
+//public class Cards {
+//    public static void main(String[] args) {
+//
+//        List<String> cards = new ArrayList<>();
+//        Deck deck = new Deck(cards);
+//        deck.shuffle(cards);
+//
+//        Hands hands = new Hands();
+//        hands.getHand(cards);
+//        hands.showHand();
+//
+//    }
+//}
+//>>>>>>> 3305b66b78ae89e42667c3a400088a4f2581969f
