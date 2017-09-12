@@ -136,24 +136,6 @@ public class Ventti {
 			//System.out.println(kortit.get(i));
 		}
 	}
-    
-
-
-
-        
-        
-        
-        //tämä on testausta 
-        
-        //moikka
-        //123
-
-        // TODO code application logic here
-    
-    
-
-
-
 
         // TODO code application logic he
 
@@ -208,3 +190,29 @@ public class Ventti {
   //  System.out.println(aMessage);
  // }
 //} 
+
+
+
+//public class DeuceTXTest
+//{
+ //@Atomic
+ //public void myTransactionMethod(HashMap<String, String> myHashMap)
+        // {
+ // myHashMap.put("s2", "two");
+ // if(8>5) 
+                 // throw new NullPointerException();
+// }
+
+  //public static void main(String[] args){
+   //HashMap<String, String> hashMap = new HashMap<String, String>();
+   //hashMap.put("s1", "one");
+   //System.out.println("Prior TX :: "+hashMap);
+   //DeuceTXTest txTest = new DeuceTXTest();
+   //try {
+    //txTest.myTransactionMethod(hashMap);
+   //} catch (Exception e) {
+    //System.out.println(e);
+   //}
+   //System.out.println("Post TX :: "+hashMap);
+  //}
+//}
