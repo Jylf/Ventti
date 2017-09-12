@@ -130,10 +130,19 @@ public class Ventti {
                 kortit.add("Hertta14");
 		
                 
+
+                
+
+                        //for(int i=0;i<kortit.size();i++){
                 //for(int i=0;i<kortit.size();i++){
+
 			//System.out.println(kortit.get(i));
 		}
 	}
+    
+
+
+
         
         
         
@@ -141,7 +150,16 @@ public class Ventti {
         
         //moikka
         //123
+
+        // TODO code application logic here
+    
+    
+
+
+
+
         // TODO code application logic he
+
 //** Generate 10 random integers in the range 0..99. */
 //public final class RandomInteger {
 
@@ -158,3 +176,41 @@ public class Ventti {
     
     //log("Done.");
  // }
+<<<<<<< HEAD
+=======
+
+//import java.util.Random;
+
+/** Generate random integers in a certain range. */
+//public final class RandomRange {
+  
+  //public static final void main(String... aArgs){
+   // log("Generating random integers in the range 1..10.");
+    
+   // int START = 1;
+    //int END = 10;
+   // Random random = new Random();
+   // for (int idx = 1; idx <= 10; ++idx){
+    //  showRandomInteger(START, END, random);
+   // }
+    
+  //  log("Done.");
+ // }
+  
+ // private static void showRandomInteger(int aStart, int aEnd, Random aRandom){
+   // if (aStart > aEnd) {
+     // throw new IllegalArgumentException("Start cannot exceed End.");
+   // }
+    //get the range, casting to long to avoid overflow problems
+  //  long range = (long)aEnd - (long)aStart + 1;
+    // compute a fraction of the range, 0 <= frac < range
+   // long fraction = (long)(range * aRandom.nextDouble());
+   // int randomNumber =  (int)(fraction + aStart);    
+  //  log("Generated : " + randomNumber);
+ // }
+  
+ // private static void log(String aMessage){
+  //  System.out.println(aMessage);
+ // }
+//} 
+>>>>>>> 6729e6c174388c6431612c5cfe568f23656a908b
