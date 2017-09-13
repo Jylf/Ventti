@@ -19,7 +19,7 @@ public class Ventti {
 //     * @param args the command line arguments
 //     */
     public static void main(String[] args) {
-		List<String> kortit = new ArrayList<String>();
+		
 //		
 //                int pata2 = 2;
 //		int pata3 = 3;
@@ -142,11 +142,10 @@ public class Ventti {
                System.out.println(kortit.get(j));
                }
                 
+    }
+    }
+}
 
-
-
-import java.util.Random;
-import java.util.Scanner;
 
 
 //public class Ventti {
