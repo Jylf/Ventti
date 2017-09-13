@@ -7,19 +7,20 @@ package ventti;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *
- * @author s1700331
- */
+import java.util.Random;
+//
+///**
+// *
+// * @author s1700331
+// */
 public class Ventti {
-
-    /**
-     * @param args the command line arguments
-     */
+//
+//    /**
+//     * @param args the command line arguments
+//     */
     public static void main(String[] args) {
-		//List<String> kortit = new ArrayList<String>();
-		
+		List<String> kortit = new ArrayList<String>();
+//		
 //                int pata2 = 2;
 //		int pata3 = 3;
 //                int pata4 = 4;
@@ -74,196 +75,206 @@ public class Ventti {
 //                int hertta14 = 14;
                
                 
-//                ArrayList kortit = new ArrayList();
-//                
-//		kortit.add("Pata2");
-//		kortit.add("Pata3");
-//		kortit.add("Pata4");
-//                kortit.add("Pata5");
-//                kortit.add("Pata6");
-//                kortit.add("Pata7");
-//                kortit.add("Pata8");
-//                kortit.add("Pata9");
-//                kortit.add("Pata10");
-//                kortit.add("Pata11");
-//                kortit.add("Pata12");
-//                kortit.add("Pata13");
-//                kortit.add("Pata14");
-//                kortit.add("Ruutu2");
-//		kortit.add("Ruutu3");
-//		kortit.add("Ruutu4");
-//                kortit.add("Ruutu5");
-//                kortit.add("Ruutu6");
-//                kortit.add("Ruutu7");
-//                kortit.add("Ruutu8");
-//                kortit.add("Ruutu9");
-//                kortit.add("Ruutu10");
-//                kortit.add("Ruutu11");
-//                kortit.add("Ruutu12");
-//                kortit.add("Ruutu13");
-//                kortit.add("Ruutu14");
-//                kortit.add("Risti2");
-//		kortit.add("Risti3");
-//		kortit.add("Risti4");
-//                kortit.add("Risti5");
-//                kortit.add("Risti6");
-//                kortit.add("Risti7");
-//                kortit.add("Risti8");
-//                kortit.add("Risti9");
-//                kortit.add("Risti10");
-//                kortit.add("Risti11");
-//                kortit.add("Risti12");
-//                kortit.add("Risti13");
-//                kortit.add("Risti14");
-//                kortit.add("Hertta2");
-//		kortit.add("Hertta3");
-//		kortit.add("Hertta4");
-//                kortit.add("Hertta5");
-//                kortit.add("Hertta6");
-//                kortit.add("Hertta7");
-//                kortit.add("Hertta8");
-//                kortit.add("Hertta9");
-//                kortit.add("Hertta10");
-//                kortit.add("Hertta11");
-//                kortit.add("Hertta12");
-//                kortit.add("Hertta13");
-//                kortit.add("Hertta14");
-//		
+                ArrayList kortit = new ArrayList();
+                
+		kortit.add("Pata2");
+		kortit.add("Pata3");
+		kortit.add("Pata4");
+                kortit.add("Pata5");
+                kortit.add("Pata6");
+                kortit.add("Pata7");
+                kortit.add("Pata8");
+                kortit.add("Pata9");
+                kortit.add("Pata10");
+                kortit.add("Pata11");
+                kortit.add("Pata12");
+                kortit.add("Pata13");
+                kortit.add("Pata14");
+                kortit.add("Ruutu2");
+		kortit.add("Ruutu3");
+		kortit.add("Ruutu4");
+                kortit.add("Ruutu5");
+                kortit.add("Ruutu6");
+                kortit.add("Ruutu7");
+                kortit.add("Ruutu8");
+                kortit.add("Ruutu9");
+                kortit.add("Ruutu10");
+                kortit.add("Ruutu11");
+                kortit.add("Ruutu12");
+                kortit.add("Ruutu13");
+                kortit.add("Ruutu14");
+                kortit.add("Risti2");
+		kortit.add("Risti3");
+		kortit.add("Risti4");
+                kortit.add("Risti5");
+                kortit.add("Risti6");
+                kortit.add("Risti7");
+                kortit.add("Risti8");
+                kortit.add("Risti9");
+                kortit.add("Risti10");
+                kortit.add("Risti11");
+                kortit.add("Risti12");
+                kortit.add("Risti13");
+                kortit.add("Risti14");
+                kortit.add("Hertta2");
+		kortit.add("Hertta3");
+		kortit.add("Hertta4");
+                kortit.add("Hertta5");
+                kortit.add("Hertta6");
+                kortit.add("Hertta7");
+                kortit.add("Hertta8");
+                kortit.add("Hertta9");
+                kortit.add("Hertta10");
+                kortit.add("Hertta11");
+                kortit.add("Hertta12");
+                kortit.add("Hertta13");
+                kortit.add("Hertta14");
+		
+                
+        Random random = new Random();
+
+    for (int x = 0; x < 1; x++) {
+        int randomindex =random.nextInt(kortit.size());
+        System.out.println(kortit.get(randomindex));			
+	       kortit.remove(randomindex);	
+               
+               for (int j = 0; j<kortit.size(); j++){
+               System.out.println(kortit.get(j));
+               }
                 
 
-                
 
 
+import java.util.Random;
+import java.util.Scanner;
 
-//import java.util.Random;
-//import java.util.Scanner;
 
-
-//public class SeventySix {
+//public class Ventti {
 //
 //    public static void main(String[] args) {
 //
 //        Scanner keyboard = new Scanner(System.in);
 //
-//        //52 Cards, Aces = 11, Picture cards = 10, Ace's cannot be reduced to 1.
-//        int[] newCard = {2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11};
+//        //52 korttia, ässät aina 14
+//        int[] newCard = {2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,13,14,14,14,14};
 //
 //        //Shuffle. Once per game.
 //        shuffleArray(newCard);
+//        
 //
-//        //Start BlackJack.
-//        System.out.println("Welcome to BlackJack!");
-//        System.out.println();
-//        System.out.println("You get a " + newCard[0] + " and a " + newCard[1] + ".");
-//        int playerTotal = newCard[0] + newCard[1];
-//        System.out.println("Your total is " + playerTotal + ".");
-//        System.out.println();
-//
-//        //Player can get blackjack/bust in the 1st deal. - awaiting betting system (enhanced bets for blackjack in first round)
-//        if (playerTotal == 21){
-//            System.out.println("Blackjack, you win.");
-//            System.exit(0);
-//        }
-//        if (playerTotal > 21){
-//            System.out.println("Bust, You lose.");
-//            System.exit(0);
-//        }
-//        // Dealer cards
-//        System.out.println("The dealer has a " + newCard[2] + " showing, and a hidden card.");
-//        int dealerTotal = newCard[2] + newCard[3];
-//        if (dealerTotal > 21){     //Dealer bust check.
-//            System.out.println();
-//            System.out.println("Dealers total is " + dealerTotal + ".");
-//            System.out.println("Dealer is bust, you win!");
-//            System.exit(0);
-//        }
-//        if (dealerTotal == 21){    //Dealer blackjack check.
-//            System.out.println();
-//            System.out.println("Dealer reveals his second card: " + newCard[3] + ".");
-//            System.out.println("Dealers total is " + dealerTotal + ".");
-//            System.out.println();
-//            System.out.println("Dealer has BlackJack, you lose.");
-//            System.exit(0);
-//        }
-//        System.out.println("His total is hidden.");
-//        System.out.println();
-//
-//
-//        // Hit or Stay for player.
-//        System.out.print("Would you like to \"hit\" or \"stay\"? ");
-//        String hitStay = keyboard.next();
-//        System.out.println();
-//
-//        //cc = card count
-//        int cc = 4; 
-//        if (hitStay.equalsIgnoreCase("hit")){
-//            // While loop to ensure different cards & multiple "hits".
-//            while (playerTotal < 21 && hitStay.equalsIgnoreCase("hit")){
-//                if (hitStay.equalsIgnoreCase("hit")){
-//                    System.out.println("You drew a " + newCard[cc] + ".");
-//                    playerTotal = playerTotal + newCard[cc];
-//                    System.out.println("Your total is " + playerTotal + ".");
-//                    System.out.println();
-//                    cc++;        //Adds 1 to ensure next card is different.
-//                    // Bust & Blackjack check.
-//                    if (playerTotal > 21){
-//                        System.out.println("You are bust, You lose.");
-//                        System.exit(0);
-//                    }
-//                    if (playerTotal == 21){
-//                        System.out.println("Blackjack, you win.");
-//                        System.exit(0);
-//                    }
-//                    System.out.print("Would you like to \"hit\" or \"stay\"? ");
-//                    hitStay = keyboard.next();
-//                    System.out.println();
-//                }
-//            }        
-//        }
-//
-//        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
-//        keyboard.close();
-//        System.out.println("Ok dealers turn.");
-//        System.out.println("His hidden card was a " + newCard[3] + "."); // reveal hidden from round one.
-//
-//        cc++; // Pretty sure its not needed.
-//        while (dealerTotal < 16){ // Dealer will stay on 16+ and hit if below.
-//            System.out.println();
-//            System.out.println("Dealer chooses to hit.");
-//            System.out.println("He draws a " + newCard[cc] + ".");
-//            cc++;
-//            dealerTotal = dealerTotal + newCard[cc];
-//            System.out.println();
-//            System.out.println("His total is " + dealerTotal);
-//            // bust check - no need for blackjack check due to final win sequence
-//            if (dealerTotal > 21){
-//                System.out.println();
-//                System.out.println("Dealer is bust, YOU WIN!");
-//                System.exit(0);
-//            }
-//            // stay condition.
-//            if (dealerTotal < 21 && dealerTotal > 16){
-//                System.out.println();
-//                System.out.println("Dealer Stays.");
-//            }
-//        }
-//
-//        // final win sequence.
-//        System.out.println();
-//        System.out.println("Dealer total is " + dealerTotal);
-//        System.out.println("Your total is " + playerTotal);
-//        System.out.println();
-//
-//        if (dealerTotal > playerTotal){
-//            System.out.println("Dealer wins.");
-//        } 
-//        if (dealerTotal == playerTotal){
-//            System.out.println("You both draw.");
-//        }
-//        if (dealerTotal < playerTotal){
-//            System.out.println("You win.");
-//        }
-//    }
+////        //Start BlackJack.
+////        System.out.println("Welcome to BlackJack!");
+////        System.out.println();
+////        System.out.println("You get a " + newCard[0] + " and a " + newCard[1] + ".");
+////        int playerTotal = newCard[0] + newCard[1];
+////        System.out.println("Your total is " + playerTotal + ".");
+////        System.out.println();
+////
+////        //Player can get blackjack/bust in the 1st deal. - awaiting betting system (enhanced bets for blackjack in first round)
+////        if (playerTotal == 21){
+////            System.out.println("Blackjack, you win.");
+////            System.exit(0);
+////        }
+////        if (playerTotal > 21){
+////            System.out.println("Bust, You lose.");
+////            System.exit(0);
+////        }
+////        // Dealer cards
+////        System.out.println("The dealer has a " + newCard[2] + " showing, and a hidden card.");
+////        int dealerTotal = newCard[2] + newCard[3];
+////        if (dealerTotal > 21){     //Dealer bust check.
+////            System.out.println();
+////            System.out.println("Dealers total is " + dealerTotal + ".");
+////            System.out.println("Dealer is bust, you win!");
+////            System.exit(0);
+////        }
+////        if (dealerTotal == 21){    //Dealer blackjack check.
+////            System.out.println();
+////            System.out.println("Dealer reveals his second card: " + newCard[3] + ".");
+////            System.out.println("Dealers total is " + dealerTotal + ".");
+////            System.out.println();
+////            System.out.println("Dealer has BlackJack, you lose.");
+////            System.exit(0);
+////        }
+////        System.out.println("His total is hidden.");
+////        System.out.println();
+////
+////
+////        // Hit or Stay for player.
+////        System.out.print("Would you like to \"hit\" or \"stay\"? ");
+////        String hitStay = keyboard.next();
+////        System.out.println();
+////
+////        //cc = card count
+////        int cc = 4; 
+////        if (hitStay.equalsIgnoreCase("hit")){
+////            // While loop to ensure different cards & multiple "hits".
+////            while (playerTotal < 21 && hitStay.equalsIgnoreCase("hit")){
+////                if (hitStay.equalsIgnoreCase("hit")){
+////                    System.out.println("You drew a " + newCard[cc] + ".");
+////                    playerTotal = playerTotal + newCard[cc];
+////                    System.out.println("Your total is " + playerTotal + ".");
+////                    System.out.println();
+////                    cc++;        //Adds 1 to ensure next card is different.
+////                    // Bust & Blackjack check.
+////                    if (playerTotal > 21){
+////                        System.out.println("You are bust, You lose.");
+////                        System.exit(0);
+////                    }
+////                    if (playerTotal == 21){
+////                        System.out.println("Blackjack, you win.");
+////                        System.exit(0);
+////                    }
+////                    System.out.print("Would you like to \"hit\" or \"stay\"? ");
+////                    hitStay = keyboard.next();
+////                    System.out.println();
+////                }
+////            }        
+////        }
+////
+////        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
+////        keyboard.close();
+////        System.out.println("Ok dealers turn.");
+////        System.out.println("His hidden card was a " + newCard[3] + "."); // reveal hidden from round one.
+////
+////        cc++; // Pretty sure its not needed.
+////        while (dealerTotal < 16){ // Dealer will stay on 16+ and hit if below.
+////            System.out.println();
+////            System.out.println("Dealer chooses to hit.");
+////            System.out.println("He draws a " + newCard[cc] + ".");
+////            cc++;
+////            dealerTotal = dealerTotal + newCard[cc];
+////            System.out.println();
+////            System.out.println("His total is " + dealerTotal);
+////            // bust check - no need for blackjack check due to final win sequence
+////            if (dealerTotal > 21){
+////                System.out.println();
+////                System.out.println("Dealer is bust, YOU WIN!");
+////                System.exit(0);
+////            }
+////            // stay condition.
+////            if (dealerTotal < 21 && dealerTotal > 16){
+////                System.out.println();
+////                System.out.println("Dealer Stays.");
+////            }
+////        }
+////
+////        // final win sequence.
+////        System.out.println();
+////        System.out.println("Dealer total is " + dealerTotal);
+////        System.out.println("Your total is " + playerTotal);
+////        System.out.println();
+////
+////        if (dealerTotal > playerTotal){
+////            System.out.println("Dealer wins.");
+////        } 
+////        if (dealerTotal == playerTotal){
+////            System.out.println("You both draw.");
+////        }
+////        if (dealerTotal < playerTotal){
+////            System.out.println("You win.");
+////        }
+////    }
 //
 //    static void shuffleArray(int[] deckCards){
 //
