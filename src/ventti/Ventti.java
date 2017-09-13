@@ -20,284 +20,274 @@ public class Ventti {
     public static void main(String[] args) {
 		//List<String> kortit = new ArrayList<String>();
 		
-                int pata2 = 2;
-		int pata3 = 3;
-                int pata4 = 4;
-                int pata5 = 5;
-                int pata6 = 6;
-                int pata7 = 7;
-                int pata8 = 8;
-                int pata9 = 9;
-                int pata10 = 10;
-                int pata11 = 11;
-                int pata12 = 12;
-                int pata13 = 13;
-                int pata14 = 14;
-                int ruutu2 = 2;
-                int ruutu3 = 3;
-                int ruutu4 = 4;
-                int ruutu5 = 5;
-                int ruutu6 = 6;
-                int ruutu7 = 7;
-                int ruutu8 = 8;
-                int ruutu9 = 9;
-                int ruutu10 = 10;
-                int ruutu11 = 11;
-                int ruutu12 = 12;
-                int ruutu13 = 14;
-                int ruutu14 = 14;
-                int risti2 = 2;
-                int risti3 = 3;
-                int risti4 = 4;
-                int risti5 = 5;
-                int risti6 = 6;
-                int risti7 = 7;
-                int risti8 = 8;
-                int risti9 = 9;
-                int risti10 = 10;
-                int risti11 = 11;
-                int risti12 = 12;
-                int risti13 = 13;
-                int risti14 = 14;
-                int hertta2 = 2;
-                int hertta3 = 3;
-                int hertta4 = 4;
-                int hertta5 = 5;
-                int hertta6 = 6;
-                int hertta7 = 7;
-                int hertta8 = 8;
-                int hertta9 = 9;
-                int hertta10 = 10;
-                int hertta11 = 11;
-                int hertta12 = 12;
-                int hertta13 = 13;
-                int hertta14 = 14;
+//                int pata2 = 2;
+//		int pata3 = 3;
+//                int pata4 = 4;
+//                int pata5 = 5;
+//                int pata6 = 6;
+//                int pata7 = 7;
+//                int pata8 = 8;
+//                int pata9 = 9;
+//                int pata10 = 10;
+//                int pata11 = 11;
+//                int pata12 = 12;
+//                int pata13 = 13;
+//                int pata14 = 14;
+//                int ruutu2 = 2;
+//                int ruutu3 = 3;
+//                int ruutu4 = 4;
+//                int ruutu5 = 5;
+//                int ruutu6 = 6;
+//                int ruutu7 = 7;
+//                int ruutu8 = 8;
+//                int ruutu9 = 9;
+//                int ruutu10 = 10;
+//                int ruutu11 = 11;
+//                int ruutu12 = 12;
+//                int ruutu13 = 14;
+//                int ruutu14 = 14;
+//                int risti2 = 2;
+//                int risti3 = 3;
+//                int risti4 = 4;
+//                int risti5 = 5;
+//                int risti6 = 6;
+//                int risti7 = 7;
+//                int risti8 = 8;
+//                int risti9 = 9;
+//                int risti10 = 10;
+//                int risti11 = 11;
+//                int risti12 = 12;
+//                int risti13 = 13;
+//                int risti14 = 14;
+//                int hertta2 = 2;
+//                int hertta3 = 3;
+//                int hertta4 = 4;
+//                int hertta5 = 5;
+//                int hertta6 = 6;
+//                int hertta7 = 7;
+//                int hertta8 = 8;
+//                int hertta9 = 9;
+//                int hertta10 = 10;
+//                int hertta11 = 11;
+//                int hertta12 = 12;
+//                int hertta13 = 13;
+//                int hertta14 = 14;
                
                 
-                ArrayList kortit = new ArrayList();
-                
-		kortit.add("Pata2");
-		kortit.add("Pata3");
-		kortit.add("Pata4");
-                kortit.add("Pata5");
-                kortit.add("Pata6");
-                kortit.add("Pata7");
-                kortit.add("Pata8");
-                kortit.add("Pata9");
-                kortit.add("Pata10");
-                kortit.add("Pata11");
-                kortit.add("Pata12");
-                kortit.add("Pata13");
-                kortit.add("Pata14");
-                kortit.add("Ruutu2");
-		kortit.add("Ruutu3");
-		kortit.add("Ruutu4");
-                kortit.add("Ruutu5");
-                kortit.add("Ruutu6");
-                kortit.add("Ruutu7");
-                kortit.add("Ruutu8");
-                kortit.add("Ruutu9");
-                kortit.add("Ruutu10");
-                kortit.add("Ruutu11");
-                kortit.add("Ruutu12");
-                kortit.add("Ruutu13");
-                kortit.add("Ruutu14");
-                kortit.add("Risti2");
-		kortit.add("Risti3");
-		kortit.add("Risti4");
-                kortit.add("Risti5");
-                kortit.add("Risti6");
-                kortit.add("Risti7");
-                kortit.add("Risti8");
-                kortit.add("Risti9");
-                kortit.add("Risti10");
-                kortit.add("Risti11");
-                kortit.add("Risti12");
-                kortit.add("Risti13");
-                kortit.add("Risti14");
-                kortit.add("Hertta2");
-		kortit.add("Hertta3");
-		kortit.add("Hertta4");
-                kortit.add("Hertta5");
-                kortit.add("Hertta6");
-                kortit.add("Hertta7");
-                kortit.add("Hertta8");
-                kortit.add("Hertta9");
-                kortit.add("Hertta10");
-                kortit.add("Hertta11");
-                kortit.add("Hertta12");
-                kortit.add("Hertta13");
-                kortit.add("Hertta14");
-		
-                
-
+//                ArrayList kortit = new ArrayList();
+//                
+//		kortit.add("Pata2");
+//		kortit.add("Pata3");
+//		kortit.add("Pata4");
+//                kortit.add("Pata5");
+//                kortit.add("Pata6");
+//                kortit.add("Pata7");
+//                kortit.add("Pata8");
+//                kortit.add("Pata9");
+//                kortit.add("Pata10");
+//                kortit.add("Pata11");
+//                kortit.add("Pata12");
+//                kortit.add("Pata13");
+//                kortit.add("Pata14");
+//                kortit.add("Ruutu2");
+//		kortit.add("Ruutu3");
+//		kortit.add("Ruutu4");
+//                kortit.add("Ruutu5");
+//                kortit.add("Ruutu6");
+//                kortit.add("Ruutu7");
+//                kortit.add("Ruutu8");
+//                kortit.add("Ruutu9");
+//                kortit.add("Ruutu10");
+//                kortit.add("Ruutu11");
+//                kortit.add("Ruutu12");
+//                kortit.add("Ruutu13");
+//                kortit.add("Ruutu14");
+//                kortit.add("Risti2");
+//		kortit.add("Risti3");
+//		kortit.add("Risti4");
+//                kortit.add("Risti5");
+//                kortit.add("Risti6");
+//                kortit.add("Risti7");
+//                kortit.add("Risti8");
+//                kortit.add("Risti9");
+//                kortit.add("Risti10");
+//                kortit.add("Risti11");
+//                kortit.add("Risti12");
+//                kortit.add("Risti13");
+//                kortit.add("Risti14");
+//                kortit.add("Hertta2");
+//		kortit.add("Hertta3");
+//		kortit.add("Hertta4");
+//                kortit.add("Hertta5");
+//                kortit.add("Hertta6");
+//                kortit.add("Hertta7");
+//                kortit.add("Hertta8");
+//                kortit.add("Hertta9");
+//                kortit.add("Hertta10");
+//                kortit.add("Hertta11");
+//                kortit.add("Hertta12");
+//                kortit.add("Hertta13");
+//                kortit.add("Hertta14");
+//		
                 
 
-                        //for(int i=0;i<kortit.size();i++){
-                //for(int i=0;i<kortit.size();i++){
+                
 
-			//System.out.println(kortit.get(i));
-		}
-	}
-
-        // TODO code application logic he
-
-//** Generate 10 random integers in the range 0..99. */
-//public final class RandomInteger {
-
-
-//public static final void main(String... aArgs){
-    //log("Generating 10 random integers in range 0..99.");
-    
-    //note a single Random object is reused here
-    //Random randomGenerator = new Random();
-    //for (int idx = 1; idx <= 10; ++idx){
-    //  int randomInt = randomGenerator.nextInt(100);
-    //  log("Generated : " + randomInt);
-   // }
-    
-    //log("Done.");
- // }
 
 
 //import java.util.Random;
-
-/** Generate random integers in a certain range. */
-//public final class RandomRange {
-  
-  //public static final void main(String... aArgs){
-   // log("Generating random integers in the range 1..10.");
-    
-   // int START = 1;
-    //int END = 10;
-   // Random random = new Random();
-   // for (int idx = 1; idx <= 10; ++idx){
-    //  showRandomInteger(START, END, random);
-   // }
-    
-  //  log("Done.");
- // }
-  
- // private static void showRandomInteger(int aStart, int aEnd, Random aRandom){
-   // if (aStart > aEnd) {
-     // throw new IllegalArgumentException("Start cannot exceed End.");
-   // }
-    //get the range, casting to long to avoid overflow problems
-  //  long range = (long)aEnd - (long)aStart + 1;
-    // compute a fraction of the range, 0 <= frac < range
-   // long fraction = (long)(range * aRandom.nextDouble());
-   // int randomNumber =  (int)(fraction + aStart);    
-  //  log("Generated : " + randomNumber);
- // }
-  
- // private static void log(String aMessage){
-  //  System.out.println(aMessage);
- // }
-//} 
+//import java.util.Scanner;
 
 
-
-//public class DeuceTXTest
-//{
- //@Atomic
- //public void myTransactionMethod(HashMap<String, String> myHashMap)
-        // {
- // myHashMap.put("s2", "two");
- // if(8>5) 
-                 // throw new NullPointerException();
-// }
-
-  //public static void main(String[] args){
-   //HashMap<String, String> hashMap = new HashMap<String, String>();
-   //hashMap.put("s1", "one");
-   //System.out.println("Prior TX :: "+hashMap);
-   //DeuceTXTest txTest = new DeuceTXTest();
-   //try {
-    //txTest.myTransactionMethod(hashMap);
-   //} catch (Exception e) {
-    //System.out.println(e);
-   //}
-   //System.out.println("Post TX :: "+hashMap);
-  //}
-//}
-//import java.util.*;
-
-
-//class Deck {
-    // create possible card combinations
-    //public final String[] SUITS = { "H", "D", "C", "S" };
-    //public final String[] RANKS = { "A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2" };
-
-    // maximum number of cards
-    //public final int deckLength = SUITS.length * RANKS.length;
-    //public List<String> fullDeck = new ArrayList<>();
-
-    //public Deck() {
-        //for(int i = 0; i < SUITS.length; i++) {
-            //for(int j = 0; j < RANKS.length; j++) {
-                //fullDeck.add(RANKS[j] + SUITS[i]);
-           // }
-       // }
-  // }
-
-    //public Deck(List<String> fullDeck) {
-        //this.fullDeck = fullDeck;
-        //for(int i = 0; i < SUITS.length; i++) {
-            //for(int j = 0; j < RANKS.length; j++) {
-                //fullDeck.add(RANKS[j] + SUITS[i]);
-           // }
-       // }
-   // }
-   // public List<String> shuffle(List<String> fullDeck) {
-   //     this.fullDeck = fullDeck;
-   //     Collections.shuffle(fullDeck);
-   //     return fullDeck;
-   // }
-
-    // this was mainly used for testing purposes
-    // to ensure shuffling was indeed taking place
-    // public void showDeck(List<String> fullDeck) {
-        //this.fullDeck = fullDeck;
-//        for(int i = 0; i < deckLength; i++) {
-//            System.out.printf("%s ",fullDeck.get(i));
-//        }
-//    }
-//}
+//public class SeventySix {
 //
-//class Hands extends Deck {
-//
-//    public String[] hand = new String[2];
-//    Random random = new Random();
-//
-//    // select 2 cards to distribute to player
-//    public String[] getHand(List<String> fullDeck) {
-//        super.fullDeck = fullDeck;
-//        for(int i = 0; i < this.hand.length; i++) {
-//            this.hand[i] = fullDeck.get(random.nextInt(super.deckLength));
-//        }
-//        return this.hand;
-//    }
-//
-//    // show player hand
-//    public void showHand() {
-//        for(int i = 0; i < this.hand.length; i++) {
-//            System.out.printf("%s ", this.hand[i]);
-//
-//        }
-//    }
-//}
-//
-//public class Cards {
 //    public static void main(String[] args) {
 //
-//        List<String> cards = new ArrayList<>();
-//        Deck deck = new Deck(cards);
-//        deck.shuffle(cards);
+//        Scanner keyboard = new Scanner(System.in);
 //
-//        Hands hands = new Hands();
-//        hands.getHand(cards);
-//        hands.showHand();
+//        //52 Cards, Aces = 11, Picture cards = 10, Ace's cannot be reduced to 1.
+//        int[] newCard = {2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11};
 //
+//        //Shuffle. Once per game.
+//        shuffleArray(newCard);
+//
+//        //Start BlackJack.
+//        System.out.println("Welcome to BlackJack!");
+//        System.out.println();
+//        System.out.println("You get a " + newCard[0] + " and a " + newCard[1] + ".");
+//        int playerTotal = newCard[0] + newCard[1];
+//        System.out.println("Your total is " + playerTotal + ".");
+//        System.out.println();
+//
+//        //Player can get blackjack/bust in the 1st deal. - awaiting betting system (enhanced bets for blackjack in first round)
+//        if (playerTotal == 21){
+//            System.out.println("Blackjack, you win.");
+//            System.exit(0);
+//        }
+//        if (playerTotal > 21){
+//            System.out.println("Bust, You lose.");
+//            System.exit(0);
+//        }
+//        // Dealer cards
+//        System.out.println("The dealer has a " + newCard[2] + " showing, and a hidden card.");
+//        int dealerTotal = newCard[2] + newCard[3];
+//        if (dealerTotal > 21){     //Dealer bust check.
+//            System.out.println();
+//            System.out.println("Dealers total is " + dealerTotal + ".");
+//            System.out.println("Dealer is bust, you win!");
+//            System.exit(0);
+//        }
+//        if (dealerTotal == 21){    //Dealer blackjack check.
+//            System.out.println();
+//            System.out.println("Dealer reveals his second card: " + newCard[3] + ".");
+//            System.out.println("Dealers total is " + dealerTotal + ".");
+//            System.out.println();
+//            System.out.println("Dealer has BlackJack, you lose.");
+//            System.exit(0);
+//        }
+//        System.out.println("His total is hidden.");
+//        System.out.println();
+//
+//
+//        // Hit or Stay for player.
+//        System.out.print("Would you like to \"hit\" or \"stay\"? ");
+//        String hitStay = keyboard.next();
+//        System.out.println();
+//
+//        //cc = card count
+//        int cc = 4; 
+//        if (hitStay.equalsIgnoreCase("hit")){
+//            // While loop to ensure different cards & multiple "hits".
+//            while (playerTotal < 21 && hitStay.equalsIgnoreCase("hit")){
+//                if (hitStay.equalsIgnoreCase("hit")){
+//                    System.out.println("You drew a " + newCard[cc] + ".");
+//                    playerTotal = playerTotal + newCard[cc];
+//                    System.out.println("Your total is " + playerTotal + ".");
+//                    System.out.println();
+//                    cc++;        //Adds 1 to ensure next card is different.
+//                    // Bust & Blackjack check.
+//                    if (playerTotal > 21){
+//                        System.out.println("You are bust, You lose.");
+//                        System.exit(0);
+//                    }
+//                    if (playerTotal == 21){
+//                        System.out.println("Blackjack, you win.");
+//                        System.exit(0);
+//                    }
+//                    System.out.print("Would you like to \"hit\" or \"stay\"? ");
+//                    hitStay = keyboard.next();
+//                    System.out.println();
+//                }
+//            }        
+//        }
+//
+//        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
+//        keyboard.close();
+//        System.out.println("Ok dealers turn.");
+//        System.out.println("His hidden card was a " + newCard[3] + "."); // reveal hidden from round one.
+//
+//        cc++; // Pretty sure its not needed.
+//        while (dealerTotal < 16){ // Dealer will stay on 16+ and hit if below.
+//            System.out.println();
+//            System.out.println("Dealer chooses to hit.");
+//            System.out.println("He draws a " + newCard[cc] + ".");
+//            cc++;
+//            dealerTotal = dealerTotal + newCard[cc];
+//            System.out.println();
+//            System.out.println("His total is " + dealerTotal);
+//            // bust check - no need for blackjack check due to final win sequence
+//            if (dealerTotal > 21){
+//                System.out.println();
+//                System.out.println("Dealer is bust, YOU WIN!");
+//                System.exit(0);
+//            }
+//            // stay condition.
+//            if (dealerTotal < 21 && dealerTotal > 16){
+//                System.out.println();
+//                System.out.println("Dealer Stays.");
+//            }
+//        }
+//
+//        // final win sequence.
+//        System.out.println();
+//        System.out.println("Dealer total is " + dealerTotal);
+//        System.out.println("Your total is " + playerTotal);
+//        System.out.println();
+//
+//        if (dealerTotal > playerTotal){
+//            System.out.println("Dealer wins.");
+//        } 
+//        if (dealerTotal == playerTotal){
+//            System.out.println("You both draw.");
+//        }
+//        if (dealerTotal < playerTotal){
+//            System.out.println("You win.");
+//        }
+//    }
+//
+//    static void shuffleArray(int[] deckCards){
+//
+//        /**
+//         * This code is obtained from the internet and is not my own though process
+//         * I need to understand it before I will be happy using it.
+//         * I'll have a try at explaining this, please correct me if I suckarino.
+//         * deckCards is a placeholder for the array I chose to use.
+//         * i = the length of the array which is 52, -1 would be 51.
+//         * i will be greater than 0 until the i-- completely loops it down to 0.
+//         * index is a random number between 1 & 52.
+//         * a is a random number in the array.
+//         * deckCards[i] is replaced with a; 
+//         * essentially shuffling 1 card in the array, this happens 51 times?
+//         */
+//
+//        Random rnd = new Random();
+//        for (int i = deckCards.length - 1; i > 0; i--)
+//        {
+//            int index = rnd.nextInt(i + 1);
+//            // Swap
+//            int a = deckCards[index];
+//            deckCards[index] = deckCards[i];
+//            deckCards[i] = a;
+//        }
 //    }
 //}
-//>>>>>>> 3305b66b78ae89e42667c3a400088a4f2581969f
