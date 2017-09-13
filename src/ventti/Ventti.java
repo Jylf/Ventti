@@ -70,7 +70,7 @@ public class Ventti {
 
         // Hit or Stay for player.
         System.out.print("Would you like to \"hit\" or \"stay\"? ");
-        String hitStay = keyboard.next();
+        String hitStay =lukija.next();
         System.out.println();
 
         //cc = card count
