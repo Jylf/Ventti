@@ -101,7 +101,7 @@ public class Ventti {
             dealerTotal = dealerTotal + newCard[cc];
             cc++;
             System.out.println();
-            System.out.println("Jakajan pisteet ovat" + dealerTotal);
+            System.out.println("Jakajan pisteet ovat " + dealerTotal);
             
             if (dealerTotal > 21){
                 System.out.println();
