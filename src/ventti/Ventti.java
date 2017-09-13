@@ -34,6 +34,8 @@ public class Ventti {
         System.out.println("Tervetuloa pelaamaan Venttiä !");
         System.out.println();
         System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
+        
+        
         int playerTotal = newCard[0] + newCard[1];
         System.out.println("Pistemääräsi on " + playerTotal + ".");
         System.out.println();
@@ -100,7 +102,7 @@ public class Ventti {
             }        
         }
 
-        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
+//        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
         lukija.close();
         System.out.println("Ok Jakajan vuoro.");
         System.out.println("Jakajan lisäkortti " + newCard[3] + "."); // reveal hidden from round one.
@@ -126,7 +128,7 @@ public class Ventti {
                 System.out.println("Jakaja ei ota lisää kortteja");
             }
         }
-//
+
         // final win sequence.
         System.out.println();
         System.out.println("Jakajan pistemäärä on " + dealerTotal);
@@ -144,7 +146,7 @@ public class Ventti {
         }
     }
 
-    static void shuffleArray(int[] deckCards){
+    static void shuffleArray(int [] deckCards){
 
         /**
          * This code is obtained from the internet and is not my own though process
