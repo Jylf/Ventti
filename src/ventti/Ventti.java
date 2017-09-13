@@ -30,70 +30,75 @@ public class Ventti {
         shuffleArray(newCard);
         
 
+<<<<<<< HEAD
         //Ventin aloitus.
         System.out.println("Welcome to BlackJack!");
+=======
+        //Start BlackJack.
+        System.out.println("Tervetuloa pelaamaan Venttiä !");
+>>>>>>> 48285afacf7dfa012c2550055dd67e50b05a2f25
         System.out.println();
-        System.out.println("You get a " + newCard[0] + " and a " + newCard[1] + ".");
+        System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
         int playerTotal = newCard[0] + newCard[1];
-        System.out.println("Your total is " + playerTotal + ".");
+        System.out.println("Pistemääräsi on " + playerTotal + ".");
         System.out.println();
 
         //Ensimmäinen kierros
         if (playerTotal == 21){
-            System.out.println("Blackjack, you win.");
+            System.out.println("Ventti, voitit!.");
             System.exit(0);
         }
         if (playerTotal > 21){
-            System.out.println("Bust, You lose.");
+            System.out.println("Yli 21 pistettä, hävisit!");
             System.exit(0);
         }
         // Dealer cards
-        System.out.println("The dealer has a " + newCard[2] + " showing, and a hidden card.");
+        System.out.println("Jakajalla " + newCard[2] + " kädessä");
         int dealerTotal = newCard[2] + newCard[3];
         if (dealerTotal > 21){     //Dealer bust check.
             System.out.println();
-            System.out.println("Dealers total is " + dealerTotal + ".");
-            System.out.println("Dealer is bust, you win!");
+            System.out.println("Jakajan pistemäärä " + dealerTotal + ".");
+            System.out.println("Jakajan pistemäärä yli 21! Voitit!!");
             System.exit(0);
         }
         if (dealerTotal == 21){    //Dealer blackjack check.
             System.out.println();
-            System.out.println("Dealer reveals his second card: " + newCard[3] + ".");
-            System.out.println("Dealers total is " + dealerTotal + ".");
+            System.out.println("Jakajalla lisäkortti " + newCard[3] + ".");
+            System.out.println("Jakajan pistemäärä on " + dealerTotal + ".");
             System.out.println();
-            System.out.println("Dealer has BlackJack, you lose.");
+            System.out.println("Jakajalla on Ventti! Hävisit!!.");
             System.exit(0);
         }
-        System.out.println("His total is hidden.");
+        System.out.println("Jakajalla on kortti pöydällä");
         System.out.println();
 
 
         // Hit or Stay for player.
-        System.out.print("Would you like to \"hit\" or \"stay\"? ");
+        System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
         String hitStay =lukija.next();
         System.out.println();
 
         //cc = card count
         int cc = 4; 
-        if (hitStay.equalsIgnoreCase("hit")){
+        if (hitStay.equalsIgnoreCase("k")){
             // While loop to ensure different cards & multiple "hits".
-            while (playerTotal < 21 && hitStay.equalsIgnoreCase("hit")){
-                if (hitStay.equalsIgnoreCase("hit")){
-                    System.out.println("You drew a " + newCard[cc] + ".");
+            while (playerTotal < 21 && hitStay.equalsIgnoreCase("k")){
+                if (hitStay.equalsIgnoreCase("k")){
+                    System.out.println("Sait kortin " + newCard[cc] + ".");
                     playerTotal = playerTotal + newCard[cc];
-                    System.out.println("Your total is " + playerTotal + ".");
+                    System.out.println("Pistemääräsi on " + playerTotal + ".");
                     System.out.println();
                     cc++;        //Adds 1 to ensure next card is different.
                     // Bust & Blackjack check.
                     if (playerTotal > 21){
-                        System.out.println("You are bust, You lose.");
+                        System.out.println("Pisteesi ovat yli 21! Hävisit!!.");
                         System.exit(0);
                     }
                     if (playerTotal == 21){
-                        System.out.println("Blackjack, you win.");
+                        System.out.println("VENTTI!! Voitit!!");
                         System.exit(0);
                     }
-                    System.out.print("Would you like to \"hit\" or \"stay\"? ");
+                    System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
                     hitStay = lukija.next();
                     System.out.println();
                 }
@@ -102,45 +107,45 @@ public class Ventti {
 
         // Dealers turn, only if Round 1 didn't end in bust/blackjack.
         lukija.close();
-        System.out.println("Ok dealers turn.");
-        System.out.println("His hidden card was a " + newCard[3] + "."); // reveal hidden from round one.
+        System.out.println("Ok Jakajan vuoro.");
+        System.out.println("Jakajan lisäkortti " + newCard[3] + "."); // reveal hidden from round one.
 
         cc++; // Pretty sure its not needed.
         while (dealerTotal < 16){ // Dealer will stay on 16+ and hit if below.
             System.out.println();
-            System.out.println("Dealer chooses to hit.");
-            System.out.println("He draws a " + newCard[cc] + ".");
+            System.out.println("Jakaja nostaa kortin");
+            System.out.println("Jakaja saa kortin " + newCard[cc] + ".");
             cc++;
             dealerTotal = dealerTotal + newCard[cc];
             System.out.println();
-            System.out.println("His total is " + dealerTotal);
+            System.out.println("Jakajan pisteet ovat" + dealerTotal);
             // bust check - no need for blackjack check due to final win sequence
             if (dealerTotal > 21){
                 System.out.println();
-                System.out.println("Dealer is bust, YOU WIN!");
+                System.out.println("Jakajan pisteet ovat yli 21! VOITIT!!");
                 System.exit(0);
             }
             // stay condition.
             if (dealerTotal < 21 && dealerTotal > 16){
                 System.out.println();
-                System.out.println("Dealer Stays.");
+                System.out.println("Jakaja ei ota lisää kortteja");
             }
         }
 //
         // final win sequence.
         System.out.println();
-        System.out.println("Dealer total is " + dealerTotal);
-        System.out.println("Your total is " + playerTotal);
+        System.out.println("Jakajan pistemäärä on " + dealerTotal);
+        System.out.println("Pelaajan pistemäärä on  " + playerTotal);
         System.out.println();
 
         if (dealerTotal > playerTotal){
-            System.out.println("Dealer wins.");
+            System.out.println("Jakaja voittaa!!");
         } 
         if (dealerTotal == playerTotal){
-            System.out.println("You both draw.");
+            System.out.println("Molemmat nostavat kortin ");
         }
         if (dealerTotal < playerTotal){
-            System.out.println("You win.");
+            System.out.println("Pelaaja voittaa!!");
         }
     }
 
