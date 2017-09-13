@@ -31,19 +31,14 @@ public class Ventti {
         
 
 
-<<<<<<< HEAD
 
 
-        //Start BlackJack.
-        System.out.println("Tervetuloa pelaamaan Venttiä !");
-=======
-        //Ventin aloitus.
-        System.out.println("Welcome to BlackJack!");
 
-        //Start BlackJack.
+        //Aloitus
         System.out.println("Tervetuloa pelaamaan Venttiä !");
 
->>>>>>> 3d1295cfef17fe270cadec967b1746914fd9d76e
+
+
         System.out.println();
         System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
         int playerTotal = newCard[0] + newCard[1];
@@ -61,23 +56,22 @@ public class Ventti {
         }
         
 
-        // Hit or Stay for player.
+        // Lisää/jää pelaajalle
         System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i)\"? ");
         String hitStay =lukija.next();
         System.out.println();
 
-        //cc = card count
+        //cc = indexin arvo
         int cc = 2;
         if (hitStay.equalsIgnoreCase("k")){
-            // While loop to ensure different cards & multiple "hits".
+            
             while (playerTotal < 21 && hitStay.equalsIgnoreCase("k")){
                 if (hitStay.equalsIgnoreCase("k")){
                     System.out.println("Sait kortin " + newCard[cc] + ".");
                     playerTotal = playerTotal + newCard[cc];
                     System.out.println("Pistemääräsi on " + playerTotal + ".");
                     System.out.println();
-                    cc++;        //Adds 1 to ensure next card is different.
-                    // Bust & Blackjack check.
+                    cc++;       
                     if (playerTotal > 21){
                         System.out.println("Pisteesi ovat yli 21! Hävisit!!.");
                         System.exit(0);
@@ -93,7 +87,7 @@ public class Ventti {
             }        
         }
         
-        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
+        // Jakajan vuoro
         lukija.close();
         System.out.println("Ok Jakajan vuoro.");
         int dealerTotal=0;
@@ -108,17 +102,17 @@ public class Ventti {
             cc++;
             System.out.println();
             System.out.println("Jakajan pisteet ovat" + dealerTotal);
-            // bust check - no need for blackjack check due to final win sequence
+            
             if (dealerTotal > 21){
                 System.out.println();
                 System.out.println("Jakajan pisteet ovat yli 21! VOITIT!!");
                 System.exit(0);
             }
-            // stay condition.
+           
             
         }
 //
-        // final win sequence.
+        // Loppulauseet
         System.out.println();
         System.out.println("Jakajan pistemäärä on " + dealerTotal);
         System.out.println("Pelaajan pistemäärä on  " + playerTotal);
