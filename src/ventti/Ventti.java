@@ -31,10 +31,19 @@ public class Ventti {
         
 
 
+<<<<<<< HEAD
 
 
         //Start BlackJack.
         System.out.println("Tervetuloa pelaamaan Venttiä !");
+=======
+        //Ventin aloitus.
+        System.out.println("Welcome to BlackJack!");
+
+        //Start BlackJack.
+        System.out.println("Tervetuloa pelaamaan Venttiä !");
+
+>>>>>>> 3d1295cfef17fe270cadec967b1746914fd9d76e
         System.out.println();
         System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
         int playerTotal = newCard[0] + newCard[1];
