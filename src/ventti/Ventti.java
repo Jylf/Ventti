@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ventti;
+package Ventti;
 
 
 import java.util.Random;
@@ -30,6 +30,9 @@ public class Ventti {
         shuffleArray(newCard);
         
 
+
+
+
         //Start BlackJack.
         System.out.println("Tervetuloa pelaamaan Venttiä !");
         System.out.println();
@@ -40,7 +43,7 @@ public class Ventti {
         System.out.println("Pistemääräsi on " + playerTotal + ".");
         System.out.println();
 
-        //Player can get blackjack/bust in the 1st deal. - awaiting betting system (enhanced bets for blackjack in first round)
+        //Ensimmäinen kierros
         if (playerTotal == 21){
             System.out.println("Ventti, voitit!.");
             System.exit(0);
@@ -49,34 +52,15 @@ public class Ventti {
             System.out.println("Yli 21 pistettä, hävisit!");
             System.exit(0);
         }
-        // Dealer cards
-        System.out.println("Jakajalla " + newCard[2] + " kädessä");
-        int dealerTotal = newCard[2] + newCard[3];
-        if (dealerTotal > 21){     //Dealer bust check.
-            System.out.println();
-            System.out.println("Jakajan pistemäärä " + dealerTotal + ".");
-            System.out.println("Jakajan pistemäärä yli 21! Voitit!!");
-            System.exit(0);
-        }
-        if (dealerTotal == 21){    //Dealer blackjack check.
-            System.out.println();
-            System.out.println("Jakajalla lisäkortti " + newCard[3] + ".");
-            System.out.println("Jakajan pistemäärä on " + dealerTotal + ".");
-            System.out.println();
-            System.out.println("Jakajalla on Ventti! Hävisit!!.");
-            System.exit(0);
-        }
-        System.out.println("Jakajalla on kortti pöydällä");
-        System.out.println();
-
+        
 
         // Hit or Stay for player.
-        System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
+        System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i)\"? ");
         String hitStay =lukija.next();
         System.out.println();
 
         //cc = card count
-        int cc = 4; 
+        int cc = 2;
         if (hitStay.equalsIgnoreCase("k")){
             // While loop to ensure different cards & multiple "hits".
             while (playerTotal < 21 && hitStay.equalsIgnoreCase("k")){
@@ -105,15 +89,16 @@ public class Ventti {
 //        // Dealers turn, only if Round 1 didn't end in bust/blackjack.
         lukija.close();
         System.out.println("Ok Jakajan vuoro.");
-        System.out.println("Jakajan lisäkortti " + newCard[3] + "."); // reveal hidden from round one.
-
-        cc++; // Pretty sure its not needed.
-        while (dealerTotal < 16){ // Dealer will stay on 16+ and hit if below.
+        int dealerTotal=0;
+        
+        
+        while (dealerTotal < playerTotal && dealerTotal <=21){ 
+            
             System.out.println();
             System.out.println("Jakaja nostaa kortin");
             System.out.println("Jakaja saa kortin " + newCard[cc] + ".");
-            cc++;
             dealerTotal = dealerTotal + newCard[cc];
+            cc++;
             System.out.println();
             System.out.println("Jakajan pisteet ovat" + dealerTotal);
             // bust check - no need for blackjack check due to final win sequence
@@ -123,10 +108,7 @@ public class Ventti {
                 System.exit(0);
             }
             // stay condition.
-            if (dealerTotal < 21 && dealerTotal > 16){
-                System.out.println();
-                System.out.println("Jakaja ei ota lisää kortteja");
-            }
+            
         }
 
         // final win sequence.
@@ -148,18 +130,7 @@ public class Ventti {
 
     static void shuffleArray(int [] deckCards){
 
-        /**
-         * This code is obtained from the internet and is not my own though process
-         * I need to understand it before I will be happy using it.
-         * I'll have a try at explaining this, please correct me if I suckarino.
-         * deckCards is a placeholder for the array I chose to use.
-         * i = the length of the array which is 52, -1 would be 51.
-         * i will be greater than 0 until the i-- completely loops it down to 0.
-         * index is a random number between 1 & 52.
-         * a is a random number in the array.
-         * deckCards[i] is replaced with a; 
-         * essentially shuffling 1 card in the array, this happens 51 times?
-         */
+        
 
         Random rnd = new Random();
         for (int i = deckCards.length - 1; i > 0; i--)
