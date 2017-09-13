@@ -30,7 +30,7 @@ public class Ventti {
         shuffleArray(newCard);
         
 
-        //Start BlackJack.
+        //Ventin aloitus.
         System.out.println("Welcome to BlackJack!");
         System.out.println();
         System.out.println("You get a " + newCard[0] + " and a " + newCard[1] + ".");
@@ -38,7 +38,7 @@ public class Ventti {
         System.out.println("Your total is " + playerTotal + ".");
         System.out.println();
 
-        //Player can get blackjack/bust in the 1st deal. - awaiting betting system (enhanced bets for blackjack in first round)
+        //Ensimmäinen kierros
         if (playerTotal == 21){
             System.out.println("Blackjack, you win.");
             System.exit(0);
@@ -146,18 +146,7 @@ public class Ventti {
 
     static void shuffleArray(int[] deckCards){
 
-        /**
-         * This code is obtained from the internet and is not my own though process
-         * I need to understand it before I will be happy using it.
-         * I'll have a try at explaining this, please correct me if I suckarino.
-         * deckCards is a placeholder for the array I chose to use.
-         * i = the length of the array which is 52, -1 would be 51.
-         * i will be greater than 0 until the i-- completely loops it down to 0.
-         * index is a random number between 1 & 52.
-         * a is a random number in the array.
-         * deckCards[i] is replaced with a; 
-         * essentially shuffling 1 card in the array, this happens 51 times?
-         */
+        
 
         Random rnd = new Random();
         for (int i = deckCards.length - 1; i > 0; i--)
