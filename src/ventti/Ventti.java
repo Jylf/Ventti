@@ -30,13 +30,13 @@ public class Ventti {
         shuffleArray(newCard);
         
 
-<<<<<<< HEAD
+
         //Ventin aloitus.
         System.out.println("Welcome to BlackJack!");
-=======
+
         //Start BlackJack.
         System.out.println("Tervetuloa pelaamaan Venttiä !");
->>>>>>> 48285afacf7dfa012c2550055dd67e50b05a2f25
+
         System.out.println();
         System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
         int playerTotal = newCard[0] + newCard[1];
