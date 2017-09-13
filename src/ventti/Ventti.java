@@ -21,12 +21,12 @@ public class Ventti {
     public static void main(String[] args) {
 		
 
-        Scanner keyboard = new Scanner(System.in);
+        Scanner lukija = new Scanner(System.in);
 
         //52 korttia, ässät aina 14
         int[] newCard = {2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,13,14,14,14,14};
 
-        //Shuffle. Once per game.
+        //Sekoittaja, kerranpelissä
         shuffleArray(newCard);
         
 
@@ -94,14 +94,14 @@ public class Ventti {
                         System.exit(0);
                     }
                     System.out.print("Would you like to \"hit\" or \"stay\"? ");
-                    hitStay = keyboard.next();
+                    hitStay = lukija.next();
                     System.out.println();
                 }
             }        
         }
 
         // Dealers turn, only if Round 1 didn't end in bust/blackjack.
-        keyboard.close();
+        lukija.close();
         System.out.println("Ok dealers turn.");
         System.out.println("His hidden card was a " + newCard[3] + "."); // reveal hidden from round one.
 
