@@ -40,7 +40,7 @@ public class Ventti {
 
 
         System.out.println();
-        System.out.println("Sinulle nostettiin " + newCard[0] + " ja  " + newCard[1] + ".");
+        System.out.println("Sinulle nostettiin " + newCard[0]+ " ja " + newCard[1] + ".");
         int playerTotal = newCard[0] + newCard[1];
         System.out.println("Pistemääräsi on " + playerTotal + ".");
         System.out.println();
