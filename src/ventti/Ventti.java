@@ -76,17 +76,13 @@ public class Ventti {
                         System.out.println("Pisteesi ovat yli 21! Hävisit!!.");
                         System.exit(0);
                     }
-                    if (playerTotal == 21){
-                        System.out.println("VENTTI!! Voitit!!");
-                        System.exit(0);
-                    }
                     System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
                     hitStay = lukija.next();
                     System.out.println();
                 }
             }        
         }
-        
+    
         // Jakajan vuoro
         lukija.close();
         System.out.println("Ok Jakajan vuoro.");
@@ -116,12 +112,10 @@ public class Ventti {
         System.out.println("Pelaajan pistemäärä on  " + playerTotal);
         System.out.println();
 
-        if (dealerTotal > playerTotal){
+        if (dealerTotal >= playerTotal){
             System.out.println("Jakaja voittaa!!");
         } 
-        if (dealerTotal == playerTotal){
-            System.out.println("Molemmat nostavat kortin ");
-        }
+
         if (dealerTotal < playerTotal){
             System.out.println("Pelaaja voittaa!!");
         }
@@ -142,5 +136,5 @@ public class Ventti {
         }
     }
 }
-//
-        // Loppulauseet
+
+
