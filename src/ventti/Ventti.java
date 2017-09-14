@@ -21,7 +21,7 @@ public class Ventti {
     public static void main(String[] args) {
 		
 
-        Scanner lukija = new Scanner(System.in);
+    Scanner lukija = new Scanner(System.in);
 
         //52 korttia, ässät aina 14
         int[] newCard = {2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,11,12,12,12,12,13,13,13,13,14,14,14,14};
@@ -74,7 +74,8 @@ public class Ventti {
                         System.out.println("Pisteesi ovat yli 21! Hävisit!!.");
                         System.exit(0);
                     }
-                    if (playerTotal == 21){ 
+                    if (playerTotal == 21){
+                        System.out.println("VENTTI !!");
                         break;
                             }
                     System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
