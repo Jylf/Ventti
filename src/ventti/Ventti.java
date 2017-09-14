@@ -35,7 +35,7 @@ public class Ventti {
 
 
         //Aloitus
-        System.out.println("Tervetuloa pelaamaan Venttiä !");
+        System.out.println("Tervetuloa pelaamaan Venttiä!");
 
 
 
@@ -46,10 +46,8 @@ public class Ventti {
         System.out.println();
 
         //Ensimmäinen kierros
-        if (playerTotal == 21){
-            System.out.println("Ventti, voitit!.");
-            System.exit(0);
-        }
+        
+        
         if (playerTotal > 21){
             System.out.println("Yli 21 pistettä, hävisit!");
             System.exit(0);
@@ -75,10 +73,7 @@ public class Ventti {
                     if (playerTotal > 21){
                         System.out.println("Pisteesi ovat yli 21! Hävisit!!.");
                         System.exit(0);
-                    }
-                    if (playerTotal == 21){
-                        System.out.println("VENTTI!! Voitit!!");
-                        System.exit(0);
+                    
                     }
                     System.out.print("Nostatko lisäkortin \"(k)yllä\" or \"(e)i\"? ");
                     hitStay = lukija.next();
@@ -118,12 +113,9 @@ public class Ventti {
         System.out.println("Pelaajan pistemäärä on  " + playerTotal);
         System.out.println();
 
-        if (dealerTotal > playerTotal){
+        if (dealerTotal >= playerTotal){
             System.out.println("Jakaja voittaa!!");
         } 
-        if (dealerTotal == playerTotal){
-            System.out.println("Molemmat nostavat kortin ");
-        }
         if (dealerTotal < playerTotal){
             System.out.println("Pelaaja voittaa!!");
         }
